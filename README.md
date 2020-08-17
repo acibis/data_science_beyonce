@@ -1,6 +1,7 @@
 
 #### Step by step data analysis. Also: What is sentiment analysis? How to create a wordcloud? What is wrong with Beyoncé?
-#nlp #beyonce #sentimentAnalysis
+
+
 
 
 Hey guys! I was recently scrolling through some memes and came across this:
