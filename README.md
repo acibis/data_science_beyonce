@@ -8,7 +8,7 @@ title: Is Beyoncé better than Queen?
 
 Hey guys! I was recently scrolling through some memes and came across this:
 <p align="center">
-  <img src="/images/bey_vs_queen/bijons.jpg">
+  <img src="./images/bijons.jpg">
 </p>
 
 <p align="justify">You have surely seen this before, haven't you? I like Beyoncé. Like, a lot. But I'm also aware that nowadays popular music is not so sophisticated. Is it? What a great question we can answer right now with a little analytic skills! Let's go and check, if Freddie Mercury's texts are FAR better than those of Beyoncé (what my boyfriend is constantly pointing out to me, so yes, I will be doing this analysis only to throw it at his face saying "AHHHAAAAAA!". Back to the post now.)</p>
@@ -105,7 +105,7 @@ beyonce <- lyrics[grep("beyonc", lyrics$artist, ignore.case = TRUE),]
  4. Clear data subsets:
  
  <p align="center">
-  <img src="/images/bey_vs_queen/clear.jpg">
+  <img src="./images/clear.jpg">
 </p>
 
 Let's check what artists did we found using `grep`:
@@ -259,7 +259,7 @@ ncol(tmqmatrix)
 
 Queen - 3171 words! Beyonce - 2575. Not good! Freddie knows 596 words more!
 <p align="center">
-  <img src="/images/bey_vs_queen/dumb_beyonce.jpg">
+  <img src="./images/dumb_beyonce.jpg">
 </p>
 
 <p align="justify">Now that we know about the numbers, maybe we will talk about emotions. Is there a way to check if the songs were positive or negative? Sure there is!</p>
@@ -401,7 +401,7 @@ plot_ly(piechart, labels = mood, values = ~Beyonce, type = 'pie',
          yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 ```
 <p align="center">
-  <img src="/images/bey_vs_queen/mood.jpg">
+  <img src="./images/mood.jpg">
 </p>
 
 Number of words per artist:
@@ -416,7 +416,7 @@ plot_ly(
   layout(title='number of songs per artist')
 ```
 <p align="center">
-  <img src="/images/bey_vs_queen/songsperartist.jpg">
+  <img src="./images/songsperartist.jpg">
 </p>
 
 Most used words:
@@ -434,7 +434,7 @@ ggplot(wf, aes(x = reorder(word, -freq), y = freq)) +
   ggtitle("Queen's most used words")
 ```
 <p align="center">
-  <img src="/images/bey_vs_queen/qmost.jpg">
+  <img src="./images/qmost.jpg">
 </p>
 
 ### Create a wordcloud
@@ -477,7 +477,7 @@ set.seed(142)
 wordcloud(names(freqb), freqq, min.freq=25)
 ```
 <p align="center">
-  <img src="/images/bey_vs_queen/beyonceblack.png">
+  <img src="./images/beyonceblack.png">
 </p>
 
 <p align="justify">Is it informative, nice-looking, readable? No! We need to define some parameters. First of all, we don't need EVERY single word. Let's narrow their number to 100. Second, we need some color (for color palettes, check <a href="http://www.datavis.ca/sasmac/brewerpal.html">brewer page</a>).</p>
@@ -488,12 +488,12 @@ wordcloud(names(freqb), freqb, max.words=100, rot.per=0.2, colors=GnBu)
 ```
 
 <p align="center">
-  <img src="/images/bey_vs_queen/beyonce_words.png">
+  <img src="./images/beyonce_words.png">
 </p>
 
 
 Last but not least, all information gathered on one infographic.
 
 <p align="center">
-  <img src="/images/bey_vs_queen/graphic.png">
+  <img src="./images/graphic.png">
 </p>
